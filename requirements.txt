@@ -1,0 +1,35 @@
+import numpy as np
+
+from os.path import join
+
+import pandas as pd
+
+import nltk
+
+nltk.download('stopwords')
+
+from sklearn.metrics import classification_report
+
+from nltk.corpus import stopwords
+
+import wordcloud
+
+import matplotlib.pyplot as plt
+
+from sklearn.preprocessing import LabelEncoder
+
+from keras.preprocessing.sequence import pad_sequences
+
+import tensorflow as tf
+
+import re
+
+from tensorflow.keras.preprocessing.text import Tokenizer
+
+from tensorflow.keras.models import Sequential
+
+from tensorflow.keras.layers import Embedding, SpatialDropout1D, LSTM, Dense
+
+from tensorflow.keras.utils import to_categorical
+
+from sklearn.model_selection import train_test_split
